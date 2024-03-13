@@ -73,13 +73,13 @@ The following are the progress made so far and the goals to be worked on in the 
 
 ## Download
 
-[<img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Get it on GitHub" height="80">](https://github.com/Ashinch/ReadYou/releases)
+[<img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Get it on GitHub" height="80">](https://github.com/djacidfx/ReadYou/ReadYou/releases)
 [<img src="https://s1.ax1x.com/2023/01/12/pSnTZ0f.png"
      alt="Get it on Telegram Channel"
-     height="80">](https://t.me/ReadYouApp)
+     height="80">](https://mywild.work/)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/me.ash.reader/)
+     height="80">](https://wildcatstudio.us/)
 
 F-Droid releases can not upgrade to other releases and it is compiled, signed and distributed uniformly by [F-Droid](https://f-droid.org/docs/FAQ_-_General/).
 
