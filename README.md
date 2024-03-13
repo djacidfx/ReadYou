@@ -89,7 +89,7 @@ We offer Nightly versions for testing purposes. These versions include the lates
 
 You can download the Nightly version from the following link:
 
-<a target="_blank" href="https://github.com/Ashinch/ReadYou/actions/workflows/build_commit.yaml">Check Nightly Builds</a>
+<a target="_blank" href="https://github.com/djacidfx/ReadYou/actions/workflows/build_commit.yaml">Check Nightly Builds</a>
 
 Choose the latest workflow from the GitHub Actions page and download the artifacts from the workflow's summary page (You may require logging in to GitHub).
 
@@ -99,7 +99,7 @@ Choose the latest workflow from the GitHub Actions page and download the artifac
 
 **Read You** is a free open source software that benefits from the open source community and every user can enjoy it's full functionality for free, so if you appreciate my current work, you can buy me a cup of coffee ☕️.
 
-<a href="https://www.buymeacoffee.com/ashinch"><img width="200px" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashinch&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+<a href="https://fuelmydreams.online/wildcatstudio"><img width="200px" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashinch&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 Thanks for all the love and support ❤️
 
