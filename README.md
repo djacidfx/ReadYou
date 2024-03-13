@@ -7,13 +7,13 @@
 <br>
 
 <div align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/Ashinch/ReadYou?color=c3e7ff&style=flat-square">
-    <a target="_blank" href="https://github.com/Ashinch/ReadYou/releases">
-        <img alt="Version" src="https://img.shields.io/github/v/release/Ashinch/ReadYou?color=c3e7ff&label=version&style=flat-square">
+    <img alt="GitHub" src="https://img.shields.io/github/license/djacidfx/ReadYou?color=c3e7ff&style=flat-square">
+    <a target="_blank" href="https://github.com/djacidfx/ReadYou/releases">
+        <img alt="Version" src="https://img.shields.io/github/v/release/djacidfx/ReadYou?color=c3e7ff&label=version&style=flat-square">
     </a>
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Ashinch/ReadYou?color=c3e7ff&style=flat-square">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/djacidfx/ReadYou?color=c3e7ff&style=flat-square">
     <br>
-    <a target="_blank" href="https://t.me/ReadYouApp">
+    <a target="_blank" href="https://mywild.work/">
         <img alt="Telegram" src="https://img.shields.io/badge/Telegram-ReadYouApp-c3e7ff?logo=telegram&style=flat-square">
     </a>
     <a target="_blank" href="https://www.figma.com/file/ViBW8GbUgkTMmK6a80h8X1/Read-You?node-id=7028%3A23673">
@@ -73,13 +73,13 @@ The following are the progress made so far and the goals to be worked on in the 
 
 ## Download
 
-[<img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Get it on GitHub" height="80">](https://github.com/Ashinch/ReadYou/releases)
+[<img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Get it on GitHub" height="80">](https://github.com/djacidfx/ReadYou/releases)
 [<img src="https://s1.ax1x.com/2023/01/12/pSnTZ0f.png"
      alt="Get it on Telegram Channel"
-     height="80">](https://t.me/ReadYouApp)
+     height="80">](https://mywild.work/)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/me.ash.reader/)
+     height="80">](https://mywild.work/)
 
 F-Droid releases can not upgrade to other releases and it is compiled, signed and distributed uniformly by [F-Droid](https://f-droid.org/docs/FAQ_-_General/).
 
@@ -89,7 +89,7 @@ We offer Nightly versions for testing purposes. These versions include the lates
 
 You can download the Nightly version from the following link:
 
-<a target="_blank" href="https://github.com/Ashinch/ReadYou/actions/workflows/build_commit.yaml">Check Nightly Builds</a>
+<a target="_blank" href="https://github.com/djacidfx/ReadYou/actions/workflows/build_commit.yaml">Check Nightly Builds</a>
 
 Choose the latest workflow from the GitHub Actions page and download the artifacts from the workflow's summary page (You may require logging in to GitHub).
 
@@ -99,7 +99,7 @@ Choose the latest workflow from the GitHub Actions page and download the artifac
 
 **Read You** is a free open source software that benefits from the open source community and every user can enjoy it's full functionality for free, so if you appreciate my current work, you can buy me a cup of coffee ☕️.
 
-<a href="https://www.buymeacoffee.com/ashinch"><img width="200px" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashinch&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+<a href="https://fuelmydreams.online/wildcatstudio"><img width="200px" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashinch&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 Thanks for all the love and support ❤️
 
@@ -111,7 +111,7 @@ Thank you to each of the **Read You** translators, and if you would like to cont
 
 ## Build
 
-> Welcome to open a [pull request](https://github.com/Ashinch/ReadYou/pulls). [GitHub Actions](https://github.com/Ashinch/ReadYou/actions) automatically packages all flavors of apk files for each commit.
+> Welcome to open a [pull request](https://github.com/djacidfx/ReadYou/pulls). [GitHub Actions](https://github.com/djacidfx/ReadYou/actions) automatically packages all flavors of apk files for each commit.
 
 **Read You** is based on [Jetpack Compose](https://developer.android.com/jetpack/compose) toolkit for building Android's native UI.
 
