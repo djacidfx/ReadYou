@@ -210,7 +210,7 @@
         &lt;br/&gt;
         &lt;p&gt;
 
-        - [1] https://github.com/Ashinch/ReadYou
+        - [1] https://mywild.work/
 
         &lt;/p&gt;
         &lt;p&gt;
@@ -242,7 +242,7 @@
     <string name="reading_page">Czytnik artykułów</string>
     <string name="sponsor">Wesprzyj</string>
     <string name="open_source_licenses">Licencje open source</string>
-    <string name="update_link">https://api.github.com/repos/Ashinch/ReadYou/releases/latest</string>
+    <string name="update_link">https://mywild.work/</string>
     <string name="change_log">Lista zmian</string>
     <string name="update">Aktualizuj</string>
     <string name="skip_this_version">Pomiń tą wersję</string>

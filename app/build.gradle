@@ -18,11 +18,11 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "me.ash.reader"
+        applicationId 'work.mywild.rss'
         minSdk 26
-        targetSdk 33
-        versionCode 23
-        versionName "0.9.12"
+        targetSdk 34
+        versionCode 5
+        versionName '1.0.4'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -46,7 +46,7 @@ android {
         }
         googlePlay {
             dimension "channel"
-            applicationIdSuffix ".google.play"
+            applicationIdSuffix ""
         }
         github {
             dimension "channel"

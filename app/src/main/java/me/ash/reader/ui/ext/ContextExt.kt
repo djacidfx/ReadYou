@@ -175,12 +175,12 @@ fun Context.getCustomTabsPackages(): List<String> {
     return appInfoList.mapNotNull { info ->
         val serviceIntent = Intent(ACTION_CUSTOM_TABS_CONNECTION).setPackage(info.activityInfo.packageName)
         val service = pm.run {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            resolveService(serviceIntent, PackageManager.ResolveInfoFlags.of(0))
-        } else {
-            resolveService(serviceIntent, 0)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                resolveService(serviceIntent, PackageManager.ResolveInfoFlags.of(0))
+            } else {
+                resolveService(serviceIntent, 0)
+            }
         }
-    }
         if (service != null) {
             return@mapNotNull info.activityInfo.packageName
         }

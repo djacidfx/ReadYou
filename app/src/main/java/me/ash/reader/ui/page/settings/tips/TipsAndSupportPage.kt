@@ -183,7 +183,7 @@ fun TipsAndSupportPage(
                         ) {
                             view.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP)
                             view.playSoundEffect(SoundEffectConstants.CLICK)
-                            context.showToast(context.getString(R.string.coming_soon))
+                            context.openURL(context.getString(R.string.github_support), OpenLinkPreference.AutoPreferCustomTabs)
                         })
                         Spacer(modifier = Modifier.width(16.dp))
 

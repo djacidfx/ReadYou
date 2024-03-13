@@ -1,5 +1,8 @@
 package me.ash.reader.infrastructure.android
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -152,7 +155,7 @@ fun CrashReportPage(
                 val startIndex = msg.indexOf(hyperLinkText)
                 val endIndex = startIndex + hyperLinkText.length
                 addUrlAnnotation(
-                    UrlAnnotation("https://github.com/Ashinch/ReadYou/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title="),
+                    UrlAnnotation("https://github.com/djacidfx/ReadYou/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title="),
                     start = startIndex,
                     end = endIndex
                 )
@@ -165,20 +168,23 @@ fun CrashReportPage(
                 )
             }
 
-            ClickableText(
-                text = annotatedString,
-                style = MaterialTheme.typography.bodyMedium.copy(color = MaterialTheme.colorScheme.onSurface),
-                modifier = Modifier.padding(horizontal = 16.dp),
-                onClick = { index ->
-                    annotatedString.getUrlAnnotations(index, index).firstOrNull()?.let { range ->
-                        context.openURL(
-                            url = range.item.url,
-                            openLink = openLinkPreference,
-                            specificBrowser = openLinkSpecificBrowserPreference
-                        )
+            fun Context.openURL(url: String, specificBrowser: String) {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url)).apply {
+                    // Set the package to the specified browser
+                    setPackage(specificBrowser)
+                }
+                // Check if the intent can be resolved
+                if (intent.resolveActivity(packageManager) != null) {
+                    // If the intent can be resolved, start the activity
+                    startActivity(intent)
+                } else {
+                    // If the intent cannot be resolved, fall back to opening the link in the default browser
+                    val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                    if (fallbackIntent.resolveActivity(packageManager) != null) {
+                        startActivity(fallbackIntent)
                     }
                 }
-            )
+            }
 
             Row(
                 modifier = Modifier
