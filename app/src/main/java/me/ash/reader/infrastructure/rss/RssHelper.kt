@@ -76,7 +76,7 @@ class RssHelper @Inject constructor(
         try {
             val accountId = context.currentAccountId
             inputStream(okHttpClient, feed.url).use {
-                SyndFeedInput().apply { isPreserveWireFeed = true }
+                SyndFeedInput(true, Locale.getDefault()).apply { isPreserveWireFeed = true }
                     .build(XmlReader(it))
                     .entries
                     .asSequence()
@@ -117,13 +117,23 @@ class RssHelper @Inject constructor(
             date = (syndEntry.publishedDate ?: syndEntry.updatedDate)?.takeIf { !it.isFuture(preDate) } ?: preDate,
             title = syndEntry.title.decodeHTML() ?: feed.name,
             author = syndEntry.author,
-            rawDescription = (content ?: desc) ?: "",
+            rawDescription = content ?: desc ?: "",
             shortDescription = Readability.parseToText(desc ?: content, syndEntry.link).take(110),
             fullContent = content,
-            img = findThumbnail(content ?: desc),
+            img = findThumbnail(syndEntry) ?: findThumbnail(content ?: desc),
             link = syndEntry.link ?: "",
             updateAt = preDate,
         )
+    }
+
+    fun findThumbnail(syndEntry: SyndEntry): String? {
+        if (syndEntry.enclosures?.firstOrNull()?.url != null) {
+            return syndEntry.enclosures.first().url
+        }
+        if (syndEntry.foreignMarkup.firstOrNull()?.name == "thumbnail") {
+            return syndEntry.foreignMarkup.firstOrNull()?.attributes?.find { it.name == "url" }?.value
+        }
+        return null
     }
 
     fun findThumbnail(text: String?): String? {
